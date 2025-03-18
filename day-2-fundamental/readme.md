@@ -14,7 +14,7 @@
 
 ## 📌 3. Database Management
 - **ORM vs SQL Native** (`gorm` vs `database/sql` + `sqlx`)
-- **Migrations** (`golang-migrate`, `gorm` auto migrations)
+- **Migrations** (`golang-migrate`, ffta)
 - **Transactions Handling** (`tx.Begin()`, `tx.Commit()`, `tx.Rollback()`)
 - **Connection Pooling** (`sql.DB.SetMaxOpenConns()`, `SetMaxIdleConns()`)
 - **Indexing dan Query Optimization**
