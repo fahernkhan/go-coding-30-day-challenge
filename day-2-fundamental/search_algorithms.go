@@ -20,5 +20,4 @@ func main() {
 
 	// Cetak hasil pencarian
 	printIndex(numbers, target)
-
 }
