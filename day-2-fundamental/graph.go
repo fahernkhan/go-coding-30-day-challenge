@@ -7,7 +7,7 @@ type Node struct {
 	Children []*Node
 }
 
-func (n *Node) DFS(visit func(n *NOde)) {
+func (n *Node) DFS(visit func(n *Node)) {
 	visit(n)
 	for _, child := range n.Children {
 		child.DFS(visit)
