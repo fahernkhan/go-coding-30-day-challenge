@@ -143,4 +143,4 @@ func main() {
 > Sangat ringan dibanding thread biasa.  
 > Mudah digunakan, cukup dengan `go namaFungsi()`.  
 > Tetapi: **jangan lupa kontrol eksekusinya!**  
-> `time.Sleep()` bukan solusi jangka panjang. Gunakan `sync.WaitGroup`, `channel`, atau `context`
+> `time.Sleep()` bukan solusi jangka panjang. Gunakan `sync.WaitGroup`, `channel`, atau `context`.
