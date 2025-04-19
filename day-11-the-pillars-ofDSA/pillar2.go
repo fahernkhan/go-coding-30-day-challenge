@@ -12,10 +12,10 @@ func demoArray() {
 	arr := []int{1, 2, 3, 4, 5}
 	fmt.Println("\n1. Array/Slice:")
 	fmt.Println("Initial:", arr)
-	
+
 	// Slice tricks
-	arr = append(arr, 6)           // Append
-	sub := arr[2:4]                // Sub-slicing
+	arr = append(arr, 6)              // Append
+	sub := arr[2:4]                   // Sub-slicing
 	arr = append(arr[:3], arr[4:]...) // Remove element
 	fmt.Println("After manipulations:", arr, "Sub-slice:", sub)
 }
@@ -30,8 +30,8 @@ func demoMap() {
 	}
 	fmt.Println("\n2. HashMap:")
 	fmt.Println("Initial:", m)
-	
-	m["orange"] = 4 // Add
+
+	m["orange"] = 4    // Add
 	delete(m, "apple") // Delete
 	fmt.Println("Updated:", m)
 }
@@ -284,7 +284,7 @@ func quicksort(arr []int) []int {
 			greater = append(greater, n)
 		}
 	}
-	return append(append(quicksort(less), append(equal, quicksort(greater)...)...)
+	return append(append(quicksort(less), append(equal, quicksort(greater)...)...))
 }
 
 func demoQuicksort() {
@@ -319,20 +319,20 @@ func demoDP() {
 // ===============================
 func demoGoTricks() {
 	fmt.Println("\n13. Go Tricks:")
-	
+
 	// Named return values
 	split := func(sum int) (x, y int) {
-		x = sum * 4/9
+		x = sum * 4 / 9
 		y = sum - x
 		return
 	}
 	a, b := split(10)
 	fmt.Println("Named Returns:", a, b)
-	
+
 	// Defer for LIFO execution
 	defer fmt.Println("First defer")
 	defer fmt.Println("Second defer (executed first!)")
-	
+
 	// Slice reversal
 	reverse := func(s []int) {
 		for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
@@ -362,6 +362,6 @@ func main() {
 	demoQuicksort()
 	demoDP()
 	demoGoTricks()
-	
+
 	fmt.Println("\n===== End of Demo =====")
 }
