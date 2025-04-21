@@ -1,2 +1,2 @@
 # go-coding-30-day-challenge
-just for fun everyday fun and obj
+just for fun everyday fun
