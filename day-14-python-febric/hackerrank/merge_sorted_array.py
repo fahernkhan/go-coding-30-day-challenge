@@ -9,5 +9,8 @@ class Solution:
 
         temp.sort()
 
-        for i in range(m + n):
-            nums1[i] = temp[i]
+        # for i in range(m + n):
+        #     nums1[i] = temp[i]
+
+        for i, value in enumerate(temp):
+            nums1[i] = value
